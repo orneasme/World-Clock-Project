@@ -1,3 +1,58 @@
 body {
-    color: red;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+  text-align: center;
+}
+select {
+  width: 300px;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-color: darkgray;
+}
+.world-clock-container {
+  border: 1px solid black;
+  max-width: 400px;
+}
+
+.cityName {
+  font-size: 25px;
+  color: black;
+}
+
+.Timezone {
+  display: block;
+  text-align: right;
+  font-size: 32px;
+  color: black;
+  margin-right: 15px;
+  margin-top: 0px;
+}
+
+.dayTime {
+  font-size: 15px;
+  font-weight: lighter;
+  color: black;
+}
+.date {
+  color: grey;
+  font-size: 14px;
+  text-align: left;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: smaller;
 }
