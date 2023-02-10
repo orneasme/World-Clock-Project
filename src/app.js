@@ -34,3 +34,10 @@ function SetCityTimes() {
 }
 SetCityTimes();
 setInterval(SetCityTimes, 1000);
+
+function displayselectedCity(event) {
+  alert("Hello");
+}
+
+let citiesElement = document.querySelector("#cities");
+citiesElement.addEventListener("change", displayselectedCity);
