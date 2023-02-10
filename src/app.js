@@ -4,7 +4,7 @@ BATimeElement.innerHTML = moment()
   .format("hh:mm A ");
 
 let ZürichElement = document.querySelector("#Timezone2");
-ZürichElement.innerHTML = moment().tz("Zurich").format("hh:mm A ");
+ZürichElement.innerHTML = moment().tz("Europe/Zurich").format("hh:mm A ");
 
 let SydneyElement = document.querySelector("#Timezone3");
 SydneyElement.innerHTML = moment().tz("Australia/Sydney").format("hh:mm A ");
