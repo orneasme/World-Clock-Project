@@ -1,5 +1,5 @@
 body {
-  color: red;
+  color: rgb(74, 62, 181);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,6 +7,15 @@ h1 {
   font-weight: lighter;
   text-align: center;
 }
+
+h2 {
+  margin: 0;
+  font-size: 25px;
+  color: black;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
 select {
   width: 80%;
   margin: 20px;
@@ -18,24 +27,19 @@ select {
 .world-clock-container {
   margin: 0 auto;
   background: whitesmoke;
-  border: 1px solid black;
+  border: 1px solid;
   border-radius: 10px;
   max-width: 400px;
   margin: 60px, 0;
   padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: whitesmoke;
 }
 .city {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
-}
-
-h2 {
-  margin: 0;
-  font-size: 25px;
-  color: black;
-  line-height: 32px;
-  vertical-align: middle;
+  border-bottom: 2px cornflowerblue;
 }
 
 .Timezone {
@@ -45,13 +49,14 @@ h2 {
 }
 
 .dayTime {
-  font-size: 15px;
+  font-size: 10px;
   line-height: 32px;
   font-weight: lighter;
   color: black;
   vertical-align: middle;
 }
-.date {
+.date,
+.dateZurich, .dateSydney {
   color: grey;
   font-size: 14px;
 }

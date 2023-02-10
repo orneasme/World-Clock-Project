@@ -12,6 +12,7 @@
   <body>
     <div class="world-clock-container">
       <h1>World Clock</h1>
+
       <div class="select container">
         <select id="cities">
           <option value="" selected>Select a city</option>
@@ -20,27 +21,34 @@
           <option value="Sydney">Sydney🇦🇺</option>
         </select>
       </div>
+
       <div class="cities container">
-        <div class="city">
+        <div class="city" id="BuenosAires">
           <div>
             <h2>Buenos Aires 🇦🇷</h2>
-            <div class="date">Date of today</div>
+            <div class="date"></div>
           </div>
-          <div class="Timezone" id="Timezone1">11:00:10<span class="dayTime">AM</span></div>
+          <div class="Timezone" id="Timezone1">
+            11:00:10<span class="dayTime">AM</span>
+          </div>
         </div>
-        <div class="city">
+        <div class="city" id="Zurich">
           <div>
             <h2>Zürich 🇨🇭</h2>
-            <div class="date">Date of today</div>
+            <div class="dateZurich">Date of today</div>
           </div>
-          <div class="Timezone" id="Timezone2">11:00:10<span class="dayTime">AM</span></div>
+          <div class="Timezone" id="Timezone2">
+            11:00:10<span class="dayTime">AM</span>
+          </div>
         </div>
-        <div class="city">
+        <div class="city" id="Sydney">
           <div>
             <h2>Sydney 🇦🇺</h2>
-            <div class="date">Date of today</div>
+            <div class="dateSydney">Date of today</div>
           </div>
-          <div class="Timezone" id="Timezone3">11:00:10<span class="dayTime">AM</span></div>
+          <div class="Timezone" id="Timezone3">
+            11:00:10<span class="dayTime">AM</span>
+          </div>
         </div>
       </div>
     </div>
