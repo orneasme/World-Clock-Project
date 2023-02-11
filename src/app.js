@@ -53,6 +53,9 @@ function displayselectedCity(event) {
             "hh:mm:ss [<small>]A [</small>] "
           )}</div>
         </div>
+        <br>
+    <a href="/">Back to all cities</a>
+
   `;
 }
 
