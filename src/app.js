@@ -4,7 +4,6 @@ function SetCityTimes() {
   let BuenosAiresDate = document.querySelector(".date");
   let BuenosAiresTime = moment();
   BuenosAiresDate.innerHTML = BuenosAiresTime.format("MMMM Do YYYY");
-
   let BATimeElement = document.querySelector("#Timezone1");
   BATimeElement.innerHTML = moment()
     .tz("America/Buenos_Aires")
@@ -37,6 +36,9 @@ setInterval(SetCityTimes, 1000);
 
 function displayselectedCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "curent_location") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let cityDate = cityTime.format("MMMM Do YYYY");

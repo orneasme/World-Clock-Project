@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-10-year-range.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock Project</title>
   </head>
@@ -14,41 +14,22 @@
       <h1>World Clock</h1>
 
       <select id="cities">
-        <option value="" selected>Select a city</option>
-        <option
-          value="Europe/Berlin
-"
-        >
-          Berlin
-        </option>
-        <option
-          value="Europe/London
-"
-        >
-          London
-        </option>
-        <option
-          value="America/Los_Angeles
-"
-        >
-          Los Angeles
-        </option>
-        <option
-          value="America/New_York
-"
-        >
-          New York
-        </option>
+        <option value="" selected>Select a city..</option>
+        <option value="curent_location">My current location📍</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Europe/London">London</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="America/New_York">New York</option>
       </select>
 
       <div class="city_container">
         <div class="city" id="BuenosAires">
           <div>
             <h2>Buenos Aires 🇦🇷</h2>
-            <div class="date"></div>
-          </div>
+            <div class="date"></div></div>
           <div class="Timezone" id="Timezone1"></div>
-        </div>
+       </div>
+
         <div class="city" id="Zurich">
           <div>
             <h2>Zürich 🇨🇭</h2>
@@ -56,6 +37,7 @@
           </div>
           <div class="Timezone" id="Timezone2"></div>
         </div>
+
         <div class="city" id="Sydney">
           <div>
             <h2>Sydney 🇦🇺</h2>
