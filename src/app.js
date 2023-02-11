@@ -36,7 +36,22 @@ SetCityTimes();
 setInterval(SetCityTimes, 1000);
 
 function displayselectedCity(event) {
-  alert("Hello");
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let cityDate = cityTime.format("MMMM Do YYYY");
+  let cityContainerElement = document.querySelector(".city_container");
+  cityContainerElement.innerHTML = `
+  <div class="city" id="">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date">${cityDate}</div>
+          </div>
+          <div class="Timezone">${cityTime.format(
+            "hh:mm:ss [<small>]A [</small>] "
+          )}</div>
+        </div>
+  `;
 }
 
 let citiesElement = document.querySelector("#cities");
