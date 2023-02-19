@@ -26,6 +26,7 @@ select {
 }
 .world-clock-container {
   margin: 0 auto;
+  margin-top: 100px;
   background: whitesmoke;
   border: 1px solid;
   border-radius: 10px;
@@ -56,7 +57,8 @@ select {
   vertical-align: middle;
 }
 .date,
-.dateZurich, .dateSydney {
+.dateZurich,
+.dateSydney {
   color: grey;
   font-size: 14px;
 }
